@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "procezly"
+location: "northamerica-northeast1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "procezly-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
